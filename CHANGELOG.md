@@ -1,3 +1,12 @@
+9/04/2021 - 1.0b2
+
+* Bugfix: The elevation selector now works on MacOS (and hopefully Linux).
+* Bugfix: Linking tokens to non-current elevations can no longer wipe out tokens on the destination key elevation.
+* Improvement: Better organized the overlay buttons, added a disabled button state, and made sure all the elevation editing buttons were available even when no token was selected.
+* Tweak: Ensured that both the 'step up' and 'step down' overlay buttons remain visible when a token is selected for consistent positioning. 
+* Tweak: Fixed overlay 'step down' button tooltip text.
+* Tweak: Relabeled 'Pck Tkn Elev' to 'Set Elevation'
+
 8/27/2021 - 1.0b
 
 * Initial beta release. Other changes are updates from 1.0a6
