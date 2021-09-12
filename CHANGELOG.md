@@ -2,7 +2,7 @@
 
 * Bugfix: 1.0b3 introduced some regressions and failed to actually fix switching key elevations when a linked token was deleted. Refactored elevation object getting throughout library to properly filter deleted tokens.
 * Improvement: Switch to Token (Token ↑↓) overlay button no longer shows when no token is selected or no elevations are defined.
-* Tweak: Correct some id HTML attribtues in loadOverlay
+* Tweak: Correct some id HTML attributes in loadOverlay
 * Tweak: Corrected non-breaking errors in switchElevation method
 
 9/11/2021 - 1.0b3
