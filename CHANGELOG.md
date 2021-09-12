@@ -1,3 +1,11 @@
+9/11/2021 - 1.0b3
+
+* New Feature: New 'Only Follow Players" option allows you to prevent the map from switching to a new elevation when moving non-owned tokens up or down. This is good for moving NPCs without having to reload the map. Note that tokens owned by the GM or by All also count to automatically switch the elevation.
+* Bugfix: Filter deleted tokens in getElevationTokens method to prevent error in calling functions. This fixes an error where deleting elevation tokens would prevent switching elevations on a map.
+* Bugfix: Moving tokens to the current elevation now correctly refreshes the token states.
+* Tweak: getElevationToken method now returns a JSON Array rather than a string list
+* Tweak: Disabled elevation change buttons now show the current elevation instead of "At Top" or "At Bottom".
+
 9/04/2021 - 1.0b2
 
 * Bugfix: The elevation selector now works on MacOS (and hopefully Linux).
