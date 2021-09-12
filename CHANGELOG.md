@@ -1,3 +1,10 @@
+9/12/2021 - 1.0b4
+
+* Bugfix: 1.0b3 introduced some regressions and failed to actually fix switching key elevations when a linked token was deleted. Refactored elevation object getting throughout library to properly filter deleted tokens.
+* Improvement: Switch to Token (Token ↑↓) overlay button no longer shows when no token is selected or no elevations are defined.
+* Tweak: Correct some id HTML attribtues in loadOverlay
+* Tweak: Corrected non-breaking errors in switchElevation method
+
 9/11/2021 - 1.0b3
 
 * New Feature: New 'Only Follow Players" option allows you to prevent the map from switching to a new elevation when moving non-owned tokens up or down. This is good for moving NPCs without having to reload the map. Note that tokens owned by the GM or by All also count to automatically switch the elevation.
