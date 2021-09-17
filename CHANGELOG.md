@@ -1,3 +1,9 @@
+9/16/2021 - 1.0b5
+
+* New Feature: Automatic Update Notifications have been added. On campaign load, the latest release from GitHub will be checked and if a new version has been added you will get an alert with a download link and the release notes you can read right in MapTool. Downloading and replacing the library is still a manual process.
+* Bugfix: Properly respect 'useFogHack' option instead of always restoring fogs on elevation switch.
+* Tweak: Re-implemented Fog Hack to be simpler and only reside on switchElevation.
+
 9/12/2021 - 1.0b4
 
 * Bugfix: 1.0b3 introduced some regressions and failed to actually fix switching key elevations when a linked token was deleted. Refactored elevation object getting throughout library to properly filter deleted tokens.
