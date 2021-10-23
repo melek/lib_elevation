@@ -1,11 +1,13 @@
-10/22/2021 - 1.0b6
+10/23/2021 - 1.0b6
 
 * New Feature: New 'sightFilter' option allows you to constrain sight fading to some tokens. 
   * The default setting is '0' which fades sight for any token not on the current elevation.
   * Setting to '1' filters out tokens above the current elevation (e.g. flying tokens will always have sight).
   * Setting to '2' filters out tokens below the current elevation (e.g. ground-level tokens will always have sight).
-* New Feature: New 'strictAppearance' lets you choose to store complex information (rotation, size, and more) for your elevation-linked tokens. This protects your elevation tokens from accidental changes when they are hidden off screen, and lets you have elevation tokens appear differently when linked to different elevations. This used to be always on, and the new default is to leave it disabled - greatly improving performance when linked tokens are present.
-* Improvement: Replaced many getter functions and some others with JavaScript and laid groundwork under the hood to begin migrating Lib:Elevation towards a mainly JavaScript backend, which will greatly increase performance.
+* New Feature: New 'strictAppearance' options lets you choose whether to store complex information (rotation, size, and more) for elevation-linked tokens on the map. 
+  * By default the setting is unchecked, and only the token's position will be explicitly stored. This default is a new option which greatly improves performance.
+  * Checking this option will additionally store: layer, draw order, height, width, size, facing, opacity, visibility to players, shape, and layout. This setting will protect elevation-linked tokens from accidental changes when they are hidden off screen, such as by macros, and lets an elevation token appear differently when linked to different elevations.
+* Improvement: Replaced all configuration getter functions and some others with JavaScript and laid groundwork under the hood to begin migrating Lib:Elevation towards a mainly JavaScript backend, which will greatly increase performance. You can now edit configuration values, such as which property represents "Elevation" in your campaign, in configuration.js.
 * Bugfix: Check for external macro access before checking for updates and alert user if needed.
 * Tweak: Removed bold text from Map Options input to work around Java's high DPI display issues.
 * Tweak: Removed punctuation at end of Map Options dialog descriptions so they didn't double up with the inserted colon.
