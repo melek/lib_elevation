@@ -1,3 +1,15 @@
+10/22/2021 - 1.0b6
+
+* New Feature: New 'sightFilter' option allows you to constrain sight fading to some tokens. 
+  * The default setting is '0' which fades sight for any token not on the current elevation.
+  * Setting to '1' filters out tokens above the current elevation (e.g. flying tokens will always have sight).
+  * Setting to '2' filters out tokens below the current elevation (e.g. ground-level tokens will always have sight).
+* New Feature: New 'strictAppearance' lets you choose to store complex information (rotation, size, and more) for your elevation-linked tokens. This protects your elevation tokens from accidental changes when they are hidden off screen, and lets you have elevation tokens appear differently when linked to different elevations. This used to be always on, and the new default is to leave it disabled - greatly improving performance when linked tokens are present.
+* Improvement: Replaced many getter functions and some others with JavaScript and laid groundwork under the hood to begin migrating Lib:Elevation towards a mainly JavaScript backend, which will greatly increase performance.
+* Bugfix: Check for external macro access before checking for updates and alert user if needed.
+* Tweak: Removed bold text from Map Options input to work around Java's high DPI display issues.
+* Tweak: Removed punctuation at end of Map Options dialog descriptions so they didn't double up with the inserted colon.
+
 9/16/2021 - 1.0b5
 
 * New Feature: Automatic Update Notifications have been added. On campaign load, the latest release from GitHub will be checked and if a new version has been added you will get an alert with a download link and the release notes you can read right in MapTool. Downloading and replacing the library is still a manual process.
@@ -13,7 +25,7 @@
 
 9/11/2021 - 1.0b3
 
-* New Feature: New 'Only Follow Players" option allows you to prevent the map from switching to a new elevation when moving non-owned tokens up or down. This is good for moving NPCs without having to reload the map. Note that tokens owned by the GM or by All also count to automatically switch the elevation.
+* New Feature: New 'Only Follow Players' option allows you to prevent the map from switching to a new elevation when moving non-owned tokens up or down. This is good for moving NPCs without having to reload the map. Note that tokens owned by the GM or by All also count to automatically switch the elevation.
 * Bugfix: Filter deleted tokens in getElevationTokens method to prevent error in calling functions. This fixes an error where deleting elevation tokens would prevent switching elevations on a map.
 * Bugfix: Moving tokens to the current elevation now correctly refreshes the token states.
 * Tweak: getElevationToken method now returns a JSON Array rather than a string list
