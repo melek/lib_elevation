@@ -2,7 +2,7 @@
 
 * Improvement: Significant further refactoring under the hood, rebuilding how map data and option settings in JavaScript. These changes continue to bring significant performance gains.
 * Bugfix: Properly allow URI Access during onCampaignLoad so it does not need to be manually set.
-* Bugfix: Correctly display single elevations in the UI overlay without a dropdown arrown.
+* Bugfix: Correctly display single elevations in the UI overlay without a dropdown arrow.
 * Bugfix: Removed deselection/reselection feature which cause some issues with switching elevation with multiple tokens selected.
 * Tweak: Updated color coding of macro buttons and added some utility functions exposing configuration and runtime values.
 
