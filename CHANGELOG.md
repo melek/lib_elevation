@@ -1,3 +1,11 @@
+11/03/2021 - 1.0b7
+
+* Improvement: Significant further refactoring under the hood, rebuilding how map data and option settings in JavaScript. These changes continue to bring significant performance gains.
+* Bugfix: Properly allow URI Access during onCampaignLoad so it does not need to be manually set.
+* Bugfix: Correctly display single elevations in the UI overlay without a dropdown arrown.
+* Bugfix: Removed deselection/reselection feature which cause some issues with switching elevation with multiple tokens selected.
+* Tweak: Updated color coding of macro buttons and added some utility functions exposing configuration and runtime values.
+
 10/23/2021 - 1.0b6
 
 * New Feature: New 'sightFilter' option allows you to constrain sight fading to some tokens. 
