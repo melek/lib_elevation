@@ -1,4 +1,4 @@
-11/03/2021 - 1.0b7
+11/04/2021 - 1.0b7
 
 * Improvement: Significant further refactoring under the hood, rebuilding how map data and option settings in JavaScript. These changes continue to bring significant performance gains.
 * Bugfix: Properly allow URI Access during onCampaignLoad so it does not need to be manually set.
