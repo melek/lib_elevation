@@ -1,3 +1,15 @@
+11/xx/2021 - 1.0b8
+
+- New Feature: The user interface overlay now uses colors from the current MapTool theme, a feature added in MapTool 1.11.0.
+- New Feature: Added support for Pit and Hill VBL, which were added in MapTool 1.11.0.
+- Improvememt: When multiple tokens are selected, the token info (second) line of the info overlay now shows a list of elevations the tokens are on and the number of tokens instead of only the 'first' selected token.
+- Improvememt: When any elevation linked tokens are selected, the additional data (top) line of the info overlay now shows a list of any linked elevations in the selected. Note that this list contains all linked elevations for any elevation token in the whole selection, so be aware when selecting multiple tokens that you won't know if *all* or *some* of the selected tokens are linked to a listed elevation.
+- Improvememt: Elevation tokens no longer have their states recalculated on every elevation load to save on performance and reduce errors.
+- Bugfix: Linking and unlinking elevation tokens should now correctly update the token's appearance and state without having to refresh the elevation.
+- Tweak: Overlay CSS is now cached at runtime and fetched via JavaScript.
+- Tweak: Deleted some macros deprecated by JavaScript implementations.
+- Tweak: Corrected some spelling errors throughout library.
+
 11/04/2021 - 1.0b7
 
 * Improvement: Significant further refactoring under the hood, rebuilding how map data and option settings in JavaScript. These changes continue to bring significant performance gains.
