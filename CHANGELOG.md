@@ -1,4 +1,16 @@
-11/xx/2021 - 1.0b8
+3/21/2023 - 1.0rc-1
+- New Feature: New `overlayMarginLR_GM` and `overlayMarginLR_PC` campaign-level options let you optionally set a right-hand margin for the lower-right UI controls form GMs or Players respectively. Closes #20.
+- New Feature: New `relativeLinkedPositioning` option allows you to move elevation-linked tokens and the relative change in position will be preserved. Defaults to 0, which is current behavior - X/Y is saved on linked tokens and reloaded for safety. Closes #23.
+- Improvement: For clarity, the 'Map Options' button label changes to 'Lib Defaults' when on the map containing Lib:Elevation, and new campaign-level options can only be set on this map.
+- Bugfix: Updated `loadElevationLayer` macro for MapTool 1.12.0 compatibility. Fixes #22.
+- Bugfix: Updated `setMapOption` macro for MapTool 1.12.0 compatibility. Fixes #18 and #19.
+- Bugfix: Updated `getElevationLayers` and `chooseElevation` macros to improve negative elevation listing. The functions now use `json.sort` to work around rptools/maptool#3878. Fixes #17.
+- Bugfix: Updated `addElevationDialog` to use the updated JavaScript functions, restoring the ability to create new elevations without blocking layers. Fixes #21.
+- Tweak: Slight updates to the user guide to reflect macro changes and improve copy.
+- Tweak: Changed `useInitiativeEvent` option to a checkbox from a text field.
+- Tweak: Updated option dialog copy slightly to remove unneccesary punctuation before added colons.
+
+11/30/2021 - 1.0b8
 
 - New Feature: Added support for Pit and Hill visual blocking layers, which were added in MapTool 1.11.0.
 - New Feature: The user interface overlay now draws colors based on the current MapTool theme thanks to the new `getInfo("theme")` feature added in MapTool 1.11.0.
