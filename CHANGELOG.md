@@ -1,3 +1,14 @@
+12/09/25 - 1.0rc-2
+- New Feature: New `onChangeMap` macro now refreshes the Elevation overlay when changing maps! Closes #27.
+- New Feature: New "Extra Widget Margin (Top)" library option nudges the vertical position of the elevation widgets up (negative values) or down (positive values). Closes #24.
+- Bugfix: Updated Lib:Elevation for compatibility with MapTool's stricter parsing in 1.18+. Closes #26.
+- Bugfix: Updated Lib:EventTokens in the demo campaign for MapTool 1.18+.
+- Bugfix: Updated Lib:SimpleDoors in the demo campaign for MapTool 1.18+.
+- Bugfix: Corrected various GM and Campaign panel macros in the demo campaign for MapTool 1.18+.
+- Bugfix: Corrected a debug message in `setTokenElevation` only broadcast when the macro is directly clicked.
+- Bugfix: Fix 'Start fresh' option when adding a new elevation by updating a reference in `addElevationDialog`.
+- Tweak: Corrected the elevation of the giant spiders in the demo campaign.
+
 3/21/2023 - 1.0rc-1
 - New Feature: New `overlayMarginLR_GM` and `overlayMarginLR_PC` campaign-level options let you optionally set a right-hand margin for the lower-right UI controls form GMs or Players respectively. Closes #20.
 - New Feature: New `relativeLinkedPositioning` option allows you to move elevation-linked tokens and the relative change in position will be preserved. Defaults to 0, which is current behavior - X/Y is saved on linked tokens and reloaded for safety. Closes #23.
